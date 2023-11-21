@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="106614c2-727a-4aad-9975-9756abeeac3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.erupt/erupt-generator.loaded" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.erupt/erupt-upms-user.loaded" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.erupt/erupt-upms.loaded" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hy/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hy/page/BackEndFilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hy/page/DailyWorkPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hy/page/FrontEndFilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hy/page/MiddleWareFilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/app.jss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tpl/dailyWork.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tpl/fileManagement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tpl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.jss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +46,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/hongyan/Documents/MyProject/package-management/src/main/resources/tpl",
+    "last_opened_file_path": "/Users/hongyan/Documents/MyProject/package-management/src/main/resources/images",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/tpl" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/hy/page" />
