@@ -1,6 +1,7 @@
 package com.hy;
 
 import com.hy.service.LocalOosProxy;
+import com.hy.service.MinioOosProxy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -15,7 +16,7 @@ import xyz.erupt.core.annotation.EruptScan;
 @SpringBootApplication
 @EntityScan
 @EruptScan
-@EruptAttachmentUpload(LocalOosProxy.class)
+@EruptAttachmentUpload(MinioOosProxy.class)
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

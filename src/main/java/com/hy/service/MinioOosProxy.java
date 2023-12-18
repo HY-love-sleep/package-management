@@ -11,6 +11,8 @@ import xyz.erupt.annotation.fun.AttachmentProxy;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 
 @Service
 public class MinioOosProxy implements AttachmentProxy {
@@ -53,6 +55,8 @@ public class MinioOosProxy implements AttachmentProxy {
             return getMinioObjectUrl(path);
         } catch (MinioException | IOException e) {
             throw new RuntimeException("上传到MinIO失败", e);
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            throw new RuntimeException(e);
         }
     }
 
