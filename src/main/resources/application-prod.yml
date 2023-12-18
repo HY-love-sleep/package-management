@@ -21,7 +21,8 @@ erupt:
   uploadPath: /soft/data
 
 minio:
-  endpoint: 47.95.36.245:9000
+  endpoint: http://47.95.36.245:9000
+  file_download_point: http://47.95.36.245:39862
   access_key: oypNSAaCNtV2mj7N
   secret_key: tW6ewUTCun8T381bcIbROQa541bOmj13
   bucket: package

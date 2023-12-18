@@ -8,6 +8,7 @@ import io.minio.errors.MinioException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import xyz.erupt.annotation.fun.AttachmentProxy;
+import xyz.erupt.core.util.MimeUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,6 +30,9 @@ public class MinioOosProxy implements AttachmentProxy {
     @Value("${minio.bucket}")
     private String bucket; // MinIO的存储桶名称
 
+    @Value("${minio.file_download_point}")
+    private String file_download_point;
+
     @Override
     public String upLoad(InputStream inputStream, String path) {
         try {
@@ -42,6 +46,7 @@ public class MinioOosProxy implements AttachmentProxy {
             if (!minioClient.bucketExists(BucketExistsArgs.builder().bucket(bucket).build())) {
                 minioClient.makeBucket(MakeBucketArgs.builder().bucket(bucket).build());
             }
+            path = path.startsWith("/") ? path.substring(1) : path;
 
             // 上传文件到MinIO
             minioClient.putObject(PutObjectArgs.builder()
@@ -67,11 +72,12 @@ public class MinioOosProxy implements AttachmentProxy {
 
     @Override
     public boolean isLocalSave() {
-        return true;
+        return false;
     }
 
     private String getMinioObjectUrl(String path) {
-        return endpoint + "/" + bucket + "/" + path;
+        return file_download_point
+                + "/buckets/" + bucket + "/" + path;
     }
 
     private String getContentType(String path) {
