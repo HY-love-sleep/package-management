@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://47.95.36.245:3306/file_management?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    username: root
-    password: root
+    username: temp
+    password: databpsPass4you!
   servlet:
     multipart:
       max-file-size: 200MB

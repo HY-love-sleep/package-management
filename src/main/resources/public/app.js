@@ -8,7 +8,7 @@ window.eruptSiteConfig = {
   	//描述
     desc: "",
 	  //是否展示版权信息
-	  copyright: true,
+	  copyright: false,
     //高德地图 api key,使用地图组件须指定此属性，amapKey获取地址：https://lbs.amap.com (服务平台为：Web端(JS API))
     amapKey: "xxxx",
     //高德地图 SecurityJsCode
