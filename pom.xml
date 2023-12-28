@@ -78,6 +78,31 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>maven-assembly</id>
+                        <!--绑定到maven操作类型上-->
+                        <phase>package</phase>
+                        <!--运行一次-->
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <!-- zip包文件名 -->
+                            <finalName>${project.artifactId}</finalName>
+                            <!-- zip包文件名不加上assembly.xml中配置的id属性值 -->
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>
+                                <!--具体的配置文件-->
+                                <descriptor>src/main/assembly/assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
