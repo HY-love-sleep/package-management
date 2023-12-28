@@ -16,6 +16,14 @@ spring:
 server:
   port: 8888
 
-# 文件共享位置
+# 文件共享位置(minio)
+minio:
+  endpoint: http://192.168.27.232:9000
+  file_download_point: http://192.168.27.232:9000
+  access_key: oypNSAaCNtV2mj7N
+  secret_key: tW6ewUTCun8T381bcIbROQa541bOmj13
+  bucket: package
+
+# 文件共享位置(local)
 erupt:
   uploadPath: /root/file_management/data

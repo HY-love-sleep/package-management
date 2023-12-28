@@ -72,13 +72,16 @@ public class MinioOosProxy implements AttachmentProxy {
 
     @Override
     public boolean isLocalSave() {
-        return false;
+        return true;
     }
 
     private String getMinioObjectUrl(String path) {
+        // 统一研发平台是这个路径， aliyun：file_download_point + "/buckets/" + bucket + "/" + path;
         return file_download_point
-                + "/buckets/" + bucket + "/" + path;
+                + "/" + bucket + "/" + path;
     }
+
+
 
     private String getContentType(String path) {
         // 这里可以根据文件扩展名设置合适的ContentType
